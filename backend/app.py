@@ -13,10 +13,9 @@ from pydantic import BaseModel
 
 
 # Project paths
-ROOT = Path(__file__).resolve().parents[1]
-MODEL = ROOT / "backend" / "phishxai_model.joblib"
-FEATURES_FILE = ROOT / "backend" / "feature_columns.joblib"
-
+ROOT = Path(__file__).resolve().parent
+MODEL = ROOT / "phishxai_model.joblib"
+FEATURES_FILE = ROOT / "feature_columns.joblib"
 
 # FastAPI application
 app = FastAPI(title="PhishXAI API")
