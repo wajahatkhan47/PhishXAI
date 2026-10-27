@@ -1,0 +1,13 @@
+﻿.venv/
+venv/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+.vscode/
+*.log
+frontend/node_modules/
+frontend/dist/
+backend/*_backup.joblib
+
+data/
